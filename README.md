@@ -20,6 +20,19 @@ sns:
 fakeMessage: false
 ```
 
+## Building
+
+```
+# currently running on go1.11rc1
+go get golang.org/dl/go1.11rc1
+# build
+go1.11rc1 build cmd/main.go
+```
+
+```
+docker build -f build/Dockerfile -t prometheus-sns-webhook .
+```
+
 ## Send a test alert
 ```
 ./tools/send_test.sh
