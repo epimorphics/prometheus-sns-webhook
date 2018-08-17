@@ -1,0 +1,4 @@
+sns:
+  topicarn: 
+  region: eu-west-1
+fakeMessage: false
