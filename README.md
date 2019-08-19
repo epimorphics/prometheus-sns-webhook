@@ -23,14 +23,13 @@ fakeMessage: false
 ## Building
 
 ```
-# currently running on go1.11rc1
-go get golang.org/dl/go1.11rc1
 # build
-go1.11rc1 build cmd/main.go
+go build cmd/main.go
 ```
 
 ```
-docker build -f build/Dockerfile -t prometheus-sns-webhook .
+# Build docker image
+docker build -t epimorphics/prometheus-sns-webhook:0.0.1 .
 ```
 
 ## Send a test alert

@@ -1,4 +1,4 @@
-FROM golang:1.11rc1-alpine as builder
+FROM golang:1.12-alpine as builder
 ADD . /go/src/github.com/epimorphics/prometheus-sns-webhook
 ENV GO111MODULE=on
 WORKDIR /go/src/github.com/epimorphics/prometheus-sns-webhook
