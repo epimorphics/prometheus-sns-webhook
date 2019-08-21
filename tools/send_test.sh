@@ -5,14 +5,16 @@ alerts1='{
      {
        "status": "firing",
        "labels": {
-         "alertname": "DiskRunningFull",
+         "alertname": "test alert",
          "dev": "sda1",
          "instance": "example3",
          "severity": "critical"
        },
        "annotations": {
-         "info": "The disk sda1 is running full",
-         "summary": "please check the instance example1"
+         "info": "this is a test alert please ignore",
+         "summary": "this is a test alert please ignore",
+         "runbook_url": "github.com/epimorphics/test",
+         "message": "this is a test alert please ignore"
        },
        "startsAt": "2018-08-17T10:19:09.269354561+01:00",
        "endsAt": "0001-01-01T00:00:00Z",
